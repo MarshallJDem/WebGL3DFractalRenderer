@@ -41,6 +41,12 @@ Then you need to tell it what geometric shape you want the base to be. A simple 
  
 This is a box of Width/Length/Height of 2.0, position of 0,0,0, and RGB color of (1, 0.5, 1) which is a pinkish tint.
 
+You will also see lines like this at the end:
+
+	setStartValueForVar('VAR_5', 8);
+
+Just ignore that for now. It's only relevant in the next section and it isn't necessary for your fractal to render.
+
 You fractal is now complete. Just put this all in a new function named whatever you want, and have the function return the object. That way you can just call your function in main.js as shown in the above section.
 
 Customizing and editing constants in real time
