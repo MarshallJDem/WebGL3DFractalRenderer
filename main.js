@@ -48,6 +48,7 @@ function setup(){
 
 
 // Update function
+// Called 60 times per second
 function draw(){
   if(renderingContextSetup){
     updateUniforms(gl);
@@ -80,15 +81,32 @@ function draw(){
         speed *= 1.1;
       } if (keyIsDown(40)){// DOWN ARROW
         speed /= 1.1;
-      } if (keyIsDown(79)){ // O
+      } 
+      // This is where the VAR_'s are changed. Change the 0.1 if you want to edit how quickly the value changes. The '/ 60' part is to compensate for framerate (like deltaTime in games)
+      if (keyIsDown(85)){ // U
         rendervarValues[0] += 0.1 / 60;
-      } if (keyIsDown(80)){ // P
+      } if (keyIsDown(73)){ // I
         rendervarValues[0] -= 0.1 / 60;
-      } if (keyIsDown(75)){ // K
+      } if (keyIsDown(72)){ // H
         rendervarValues[1] += 0.1 / 60;
-      } if (keyIsDown(76)){ // L
+      } if (keyIsDown(74)){ // J
         rendervarValues[1] -= 0.1 / 60;
+      } if (keyIsDown(86)){ // V
+        rendervarValues[2] += 0.1 / 60;
+      } if (keyIsDown(66)){ // B
+        rendervarValues[2] -= 0.1 / 60;
+      } if (keyIsDown(79)){ // O
+        rendervarValues[3] += 0.1 / 60;
+      } if (keyIsDown(80)){ // P
+        rendervarValues[3] -= 0.1 / 60;
+      } if (keyIsDown(75)){ // K
+        rendervarValues[4] += 0.1 / 60;
+      } if (keyIsDown(76)){ // L
+        rendervarValues[4] -= 0.1 / 60;
       }
+      // N and M are not here since they increment once each key click rather than once every frame the key is pressed. See "keyPressed" function for N / M
+
+      // The WebGL draw function
       gl.drawArrays(primitiveType, offset, count);
     }
   }
