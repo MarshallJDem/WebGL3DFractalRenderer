@@ -67,8 +67,13 @@ You will also notice this:
 <h2>Keyboard Shortcuts</h2>
 
 WASD to move
+
 Space Bar to go up
+
 Shift to go down
+
 Enter to full screen
+
+Up Arrow / Down Arrow to increase / decrease movement speed (quadtratically)
 
 N / M to decrease / increase VAR_5
