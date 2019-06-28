@@ -49,7 +49,7 @@ Just ignore that for now. It's only relevant in the next section and it isn't ne
 
 You fractal is now complete. Just put this all in a new function named whatever you want, and have the function return the object. That way you can just call your function in main.js as shown in the above section.
 
-Customizing and editing constants in real time
+<h2>Customizing and editing constants in real time</h2>
 
 You will notice (and probably be initially confused by) the fact that some of the constants in the preset examples use a string instead of a number. For example: 
 
