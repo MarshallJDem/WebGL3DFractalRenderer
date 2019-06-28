@@ -77,3 +77,13 @@ Enter to full screen
 Up Arrow / Down Arrow to increase / decrease movement speed (quadratically)
 
 N / M to decrease / increase VAR_5
+
+<h2>Optimizing rendering / Making it lag less</h2>
+
+Depending on the graphics card you have and the fractal you are rendering, the rendering may be pretty slow. Other than making a simpler fractal the only real way to effect efficiency is to change the size of the window upon loading. This will affect the resolution which directly affects the rendering time. Making the window half the length and width of your screen will decrease rendering time by 75% since it will now be 25% of its original size and rendering time is based on number of pixels.
+
+Decreasing things like lighting and shadows will not have a very large effect on performance since they are very efficient calculations due to the nature of distance estimators and 3D fractals.
+
+<h2>Camera Settings</h2>
+
+Things like specular lighting and shadows can be changed in cameraUniforms.js. The file is very self explanatory. 
