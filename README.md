@@ -74,6 +74,6 @@ Shift to go down
 
 Enter to full screen
 
-Up Arrow / Down Arrow to increase / decrease movement speed (quadtratically)
+Up Arrow / Down Arrow to increase / decrease movement speed (quadratically)
 
 N / M to decrease / increase VAR_5
