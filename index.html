@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Sketch Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #c{
+                width: 100%;
+                height: 100%;
+                margin-top: 0;
+            }
+            body{
+                margin: 0;
+                padding: 0;
+                background-image: url("space.png")
+            }
+            #outer{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+
+    <body style="overflow: hidden;">
+        <div id="outer"><canvas id="c" width="10" height="10"></canvas></div>
+        
+        
+        <script src="lalolib.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/mathjs@5.9.0/dist/math.min.js"></script>
+        <script src="p5.min.js" type="text/javascript"></script>
+        <script src="variableDefines.js" type="text/javascript"></script>
+        <script src="glslFiles.js" type="text/javascript"></script>
+        <script src="helperUtilities.js" type="text/javascript"></script>
+        <script src="cameraUniforms.js" type="text/javascript"></script>
+        <script src="shaderSetup.js" type="text/javascript"></script>
+        <script src="fractalObject.js" type="text/javascript"></script>
+        <script src="presets.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+
+    </body>
+</html>
