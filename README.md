@@ -15,7 +15,7 @@ presets.js contains a bunch of premade fractal setups that you can use. You can 
 
 In main.js just edit the line "var obj = Menger();" and replace "Menger" with whatever preset you want to use, such as "Tree".
 
-Making your own fractals
+<h2>Making your own fractals</h2>
 
 Go into the presets.js file and look at all the examples that are in there. You will notice they follow a similar format. Start off by making a new instance of FractalObject:
 
@@ -23,21 +23,21 @@ Go into the presets.js file and look at all the examples that are in there. You 
   
 Then, you start a loop:
 
-  obj.add(new LoopStart(10));
+  `obj.add(new LoopStart(10));`
 
 This loop controls how many times your Fractal folds will be applied - fractals are based on self-similar patterns and that is achieved by repeating a process of folds on your object. The "10" means that every fold that comes after the start of the loop will be done 10 times. So after you start your loop, you need to add in the folds:
 
-  obj.add(new FoldScaleTranslate(3.0, [-2,-2,0]))
+  `obj.add(new FoldScaleTranslate(3.0, [-2,-2,0]))`
 
 This is an example of the Fold Scale Translate fold, which scales the object and translates it (moves it). In this example the scale factor is 3.0 (it will shrink by a factor of 3) and will be shifted over -2 in the X and Y directions and 0 in the Z direction.
 
 You can add in as many folds with whatever constants you want. Whether or not it looks cool is a result of experimentation. Once you are done adding folds, you have to end the loop:
 
-  obj.add(new LoopEnd());
+  `obj.add(new LoopEnd());`
  
 Then you need to tell it what geometric shape you want the base to be. A simple one is the box:
 
-  obj.add(new Box([2.0, 2.0, 2.0], [0.0,0.0,0.0], [1, 0.5, 1]))
+  `obj.add(new Box([2.0, 2.0, 2.0], [0.0,0.0,0.0], [1, 0.5, 1]))`
  
 This is a box of Width/Length/Height of 2.0, position of 0,0,0, and RGB color of (1, 0.5, 1) which is a pinkish tint.
 
@@ -47,18 +47,18 @@ Customizing and editing constants in real time
 
 You will notice (and probably be initially confused by) the fact that some of the constants in the preset examples use a string instead of a number. For example: 
 
-  obj.add(new LoopStart('VAR_5'));
+  `obj.add(new LoopStart('VAR_5'));`
 
 This is using the string 'VAR_5' instead of a normal int like 5 or 7. This is because the string 'VAR_5' is actually referencing one of six variables that can be used in place of a constant so that it can be changed at render time. The variables are incremented/decremented by various keys on your keyboard. See keyboard shortcuts below for more information. In this example, VAR_5 is being used to control how many times the looping will occur. You can increase it by clicking M and decrease it by clicking N. NOTE: The available VARs are VAR_0 through VAR_5, and VAR_5 is an int whereas VAR_0 through VAR_4 are floats. This means that loops should ONLY use VAR_5 since the amount of loops is an integer. This is important for the rendering to happen properly since it is in C which is a very type sensitive language.
 
 You will also notice this:
 
 
-  obj.add(new Box([1.0, 1.0, 1.0], [0.0,0.0,0.0], 'orbit'));
+  `obj.add(new Box([1.0, 1.0, 1.0], [0.0,0.0,0.0], 'orbit'));`
 
 'orbit' is in place of what would normally be an RGB color set like [1.0, 0.5, 1.0]. Using 'orbit' allows for a special kind of coloring that is more than just a solid color and is dependent on the fractal itself. It's reccomended you use this for coloring because it looks cooler...
 
-Keyboard Shortcuts
+<h2>Keyboard Shortcuts</h2>
 
 WASD to move
 Space Bar to go up
