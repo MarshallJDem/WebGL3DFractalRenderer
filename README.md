@@ -76,6 +76,16 @@ Enter to full screen
 
 Up Arrow / Down Arrow to increase / decrease movement speed (quadratically)
 
+U / I to decrease / increase VAR_0
+
+H / J to decrease / increase VAR_1
+
+V / B to decrease / increase VAR_2
+
+O / P to decrease / increase VAR_3
+
+K / L to decrease / increase VAR_4
+
 N / M to decrease / increase VAR_5
 
 <h2>Optimizing rendering / Making it lag less</h2>
