@@ -7,7 +7,7 @@ Originally based on: https://github.com/HackerPoet/PySpace
 
 If you have questions feel free to E-mail me! marshalljdem@gmail.com
 
-How to use it
+<h1>How to use it</h1>
 
 Unless you want to dive really deep, this is designed so that you only really need to access main.js and presets.js.
 
