@@ -7,7 +7,7 @@ Originally based on: https://github.com/HackerPoet/PySpace
 
 If you have questions feel free to E-mail me! marshalljdem@gmail.com
 
-<h1>How to use it</h1>
+<h2>How to use it</h2>
 
 Unless you want to dive really deep, this is designed so that you only really need to access main.js and presets.js.
 
@@ -19,7 +19,7 @@ Making your own fractals
 
 Go into the presets.js file and look at all the examples that are in there. You will notice they follow a similar format. Start off by making a new instance of FractalObject:
 
-  var obj = new FractalObject()
+  `var obj = new FractalObject()`
   
 Then, you start a loop:
 
