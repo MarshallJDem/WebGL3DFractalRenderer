@@ -62,7 +62,7 @@ You will also notice this:
 
   `obj.add(new Box([1.0, 1.0, 1.0], [0.0,0.0,0.0], 'orbit'));`
 
-'orbit' is in place of what would normally be an RGB color set like [1.0, 0.5, 1.0]. Using 'orbit' allows for a special kind of coloring that is more than just a solid color and is dependent on the fractal itself. It's reccomended you use this for coloring because it looks cooler...
+'orbit' is in place of what would normally be an RGB color set like [1.0, 0.5, 1.0]. Using 'orbit' allows for a special kind of coloring that is more than just a solid color and is dependent on the fractal itself. It's recommended you use this for coloring because it looks cooler...
 
 <h2>Keyboard Shortcuts</h2>
 
