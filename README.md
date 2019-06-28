@@ -43,7 +43,7 @@ This is a box of Width/Length/Height of 2.0, position of 0,0,0, and RGB color of
 
 You will also see lines like this at the end:
 
-	setStartValueForVar('VAR_5', 8);
+`setStartValueForVar('VAR_5', 8);`
 
 Just ignore that for now. It's only relevant in the next section and it isn't necessary for your fractal to render.
 
