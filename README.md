@@ -99,3 +99,7 @@ If the results are still undesirable, I'd reccomend not using a web based render
 <h2>Camera Settings</h2>
 
 Things like specular lighting and shadows can be changed in cameraUniforms.js. The file is very self explanatory. 
+
+<h2>Custom Folds</h2>
+
+If you want your own fold equations, you will have to make one in fractalObject.js. This is pretty confusing to do since it requires you to write the code in C but put it in a string so that it can be loaded onto the graphics card as a glsl file. It would take me a long time to explain this process so for now if you want custom folds just E-mail me @ marshalljdem@gmail.com
