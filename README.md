@@ -5,7 +5,7 @@ It is a free open source project that utilizes WebGL2 to render 3D fractals in r
 
 Originally based on: https://github.com/HackerPoet/PySpace
 
-If you have questions feel free to E-mail me! marshalljdem@gmail.com
+If you have questions use the issues tab or feel free to E-mail me at marshalljdem@gmail.com !
 
 <h2>How to use it</h2>
 
